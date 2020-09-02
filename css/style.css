@@ -106,7 +106,9 @@ body {
 
 
 
-
+#architects{
+  padding-top: 100px;
+}
 
 
 #architects img {
@@ -114,8 +116,8 @@ body {
 }
 
 #architects .card:hover {
-  background: #3292a6;
-  color: #fff; 
+  background: #fffb03;
+  color: rgb(0, 0, 0); 
 }
 
 
