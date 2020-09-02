@@ -1,0 +1,9 @@
+@media screen and (max-width: 992px) {
+    body {
+      color: rgb(1, 255, 1)!important;
+    }
+
+    #architects .card{
+      margin-top: 50px;
+    }
+  }
