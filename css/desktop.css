@@ -145,6 +145,16 @@
           right:0;opacity:1
         }*/
       } 
+
+    hr.left-line{
+     
+        border: 2px solid #fffb03;
+        width: 80%;
+        margin-right: 20%;
+        
+  
+        
+      } 
      
       
     
@@ -189,11 +199,16 @@
 
     
 
-  .yellow-line{
-      padding: 0 0 0 2rem;
+  .yellow-line-left{
+      padding-left: 2rem;
       border-left: 0.4rem solid #fffb03;
-    
   }
+
+  .yellow-line-right{
+    padding-right: 2rem;
+    
+    border-right: 0.4rem solid #fffb03;
+}
   
 
 
