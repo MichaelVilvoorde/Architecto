@@ -1,8 +1,11 @@
 *{
   margin: 0;
   padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
+
 
 html{
   scroll-behavior: smooth;
@@ -31,31 +34,27 @@ html{
 
 
 
-
-body {
-  
-  
-}
-
-
-
+/* --------------- Nav --------------- */
   
 #mainNav {
   min-height: 3.5rem;
-  background-color: rgba(6, 164, 255, 0.5);
+  background-color: rgba(0, 0, 0, 0.5);
+  text-align: center;
 }
 
+/* hamburger */
 #mainNav .navbar-toggler {
   font-size: 80%;
   padding: 0.75rem;
-  color: #0099ff;
-  border: 1px solid #33ff00;
+  color: #a0a0a0;
+  border: 1px solid #ffffff;
 }
 
 #mainNav .navbar-toggler:focus {
   outline: none;
 }
 
+ /* company name */
 #mainNav .navbar-brand {
   color: #ffffff;
   font-weight: 700;
@@ -73,19 +72,32 @@ body {
   background-color: transparent;
 }
 
-
-
+#mainNav .dropdown-menu {
+  background: transparent;
+  /* background:rgb(234, 0, 255); */
+  border: none;
+  color: white;
+  text-align: center;
   
+}
+
+#mainNav .dropdown-menu a{
+ 
+  color: #A7A7A6;
   
+}
+
 
 
   
 .btn {
   padding: 1.25rem 2rem;  
   font-size: 80%;
+  text-transform: uppercase;
+  
 }
   
-/* homepage image */
+/*  --------------- homepage ---------------  */
 .bg {
   position: relative;
   width: 100%;
@@ -127,10 +139,83 @@ body {
   background: linear-gradient(to bottom, #000000 0%, rgba(0, 0, 0, 0.9) 75%,
   rgba(0, 0, 0, 0.8) 100%);
 }
-  
+
+
+/*  --------------- Quote ---------------  */
+
+/* center the blockquote */
+.blockquote-wrapper {
+  display: flex;
+  justify-content: center;
   
 
 
+  /* option2 */
+  /* border: 3px solid rgba(182, 182, 182, 0.87); */
+  margin-left: 20%;
+  margin-right: 20%;
+  background: rgb(26, 26, 26);
+  padding: 1rem;
+  /* border: 1px solid rgba(255, 255, 255, 0.658); */
+  border-left: 4px solid #FFFB03;
+  
+}
+
+/* Blockquote main style */
+.blockquote {
+   position: relative;
+   font-family: 'Montserrat', sans-serif;
+   padding-bottom: 1rem;
+   width: 100%;
+   max-width: 40vw;
+   z-index: 1;
+   align-self: center;
+   padding-left: 2rem;
+
+   /* border-bottom: solid 2px #FFFB03; */
+
+
+   /* option2 */
+   /* border-bottom: solid 2px #ffffffb6; */
+}
+
+/* Blockquote text */
+.blockquote p {
+   position: relative;
+   color: #727272;
+   line-height: 1;
+   margin: 0;
+   text-align: start;
+   
+}
+
+/* Blockquote right double quotes */
+.blockquote:after {
+   position: absolute;
+   content: "”";
+   color: rgb(255, 255, 255);
+   font-size: 10rem;
+   line-height: 0;
+   bottom: -43px;
+   right: 30px;
+}
+
+/* Blockquote writer/name */
+.blockquote h5 {
+   position: relative;
+   color: #727272;
+   line-height: 1;
+   margin: 0;
+   padding-top: 1rem;
+   z-index: 1;
+   text-align: start;
+}
+
+
+
+
+
+/*  --------------- Team ---------------  */
 
 #architects{
   padding-top: 100px;
@@ -148,14 +233,14 @@ body {
 
 
 
-
+/*  --------------- Projects ---------------  */
   
-.projects-section {
-    padding: 10rem 0;
-    /* background: linear-gradient(to bottom, #000000 0%, rgba(0, 0, 0, 0.9) 75%,
-     rgba(0, 0, 0, 0.8) 100%); */
+/* .projects-section {
     
-}
+    background: linear-gradient(to bottom, #000000 0%, rgba(0, 0, 0, 0.9) 75%,
+     rgba(0, 0, 0, 0.8) 100%);
+    
+} */
 
 .projects-section .featured-text {
   padding: 2rem;
@@ -168,6 +253,20 @@ body {
 
 
 
+/*  --------------- Contact ---------------  */
+
+
+.contact-page{
+  padding-top: 100px;
+}
+
+
+
+
+
+
+
+/*  --------------- Signup ---------------  */
 
   
 .signup-section {
@@ -239,4 +338,12 @@ body {
   
 
 }
+
+
+
+#contact-home{
+ 
+  background: linear-gradient(to top, #000000 0%, rgba(51, 51, 51, 0.9) 100%,
+      rgba(19, 19, 19, 0.8) 100%);
+ }
 

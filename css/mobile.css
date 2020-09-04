@@ -1,9 +1,59 @@
 @media screen and (max-width: 992px) {
-    body {
-      color: rgb(1, 255, 1)!important;
+    nav{
+      margin-top: 25px;
+      
+
     }
 
     #architects .card{
       margin-top: 50px;
     }
+
+    
+    .quote{
+      display: none;
+    }
+
+
+    .about-section hr{
+      display: none;
+    }
+
+
+    #team-home .row{
+          display:flex;
+          flex-direction: column-reverse;
+    }
+
+
+    #team-home img{
+      background: url(/img/team-img.png);
+    }
+
+    #contact-home .row{
+      display:flex;
+      flex-direction: column-reverse;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* .container {
+      display:flex;
+      flex-direction: column-reverse;
+    }
+    
+    .section1,
+    .section2 {
+      height: auto;
+    } */
   }
