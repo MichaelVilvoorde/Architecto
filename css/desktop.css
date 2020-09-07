@@ -1,6 +1,6 @@
 @media (min-width: 992px) {
 
-/* NAV */
+  /* --------------- Nav --------------- */
     #mainNav {
       padding-top: 0;
       padding-bottom: 0;
@@ -50,7 +50,7 @@
 
     #mainNav .dropdown-menu {
       /* background: transparent; */
-      background:rgba(0, 0, 0, 0.5)!important;
+      background:rgba(0, 0, 0, 0.7)!important;
       border: none;
       
     }
@@ -66,7 +66,7 @@
 
 
 
-/* HOMEPAGE */
+  /*  --------------- homepage ---------------  */
     .bg {
       height: 100vh;
       padding: 0;
@@ -81,6 +81,7 @@
       font-size: 1.25rem;
     }
 
+    /* mouse animation */
     .middle{
       position: absolute;
       top: 90%;
@@ -121,51 +122,47 @@
       }
     }
 
+    /* Vertical IMG lines */
+
+    .yellow-line-left{
+      padding-left: 2rem;
+      border-left: 4px solid #fffb03;
+    }
+
+     .yellow-line-right{
+       padding-right: 2rem;
+       border-right: 4px solid #fffb03;
+     } 
 
 
 
 
-/* ABOUT */
+  /*  --------------- About ---------------  */
 
     hr.right-line{
-     
       border-bottom: 3px solid #fffb03;
       width: 80%;
       margin-left: 20%;
-      
-
-      overflow-x: hidden;
-      /* Hide horizontal scrollbar */
-      /* Doesn't work */
-
-
-      /* .w3-animate-right */
-      /* position:relative;
-      animation: animateright 1s
-    }
-      @keyframes animateright{
-        from{
-          right:-700px;opacity:0
-        } 
-        to{
-          right:0;opacity:1
-        }*/
-      } 
+    } 
 
     hr.left-line{
-     
         border-bottom: 3px solid #fffb03;
         width: 80%;
         margin-right: 20%;
-        
-  
-        
-      } 
-
+    } 
       
+    /* #about-section{
+      padding-bottom: 400px !important;
+    } */
 
+    
 
-     
+  /*  --------------- Team ---------------  */
+    #architects .card:hover {
+      background: #ddbc00ec;
+      color: rgb(255, 255, 255); 
+      
+    }
       
     
 
@@ -175,26 +172,13 @@
 
 
 
-/* PROJECTS */
-
-/* #page-header {
-  height: 100vh;
-  background: url('/img/test.jpg');
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  
-  text-align: center;
-  color: #fff;
-  border-bottom: 2px #eee solid;
-} */
+  /*  --------------- Projects ---------------  */
 
 
+    #projects .btn-mobile{
+      display: none;
+    }
 
-
-
-    
 
     .projects-section .featured-text {
       padding: 0 0 0 2rem;
@@ -211,14 +195,14 @@
 
     .projects-section .project-text hr {
       border-color: #fffb03;
-      border-width: 0.25rem;
+      border-width: 3px;
       width: 500px;
 
     }
 
     .projects-section .project-text hr.line-right{
       border-color: #fffb03;
-      border-width: 0.25rem;
+      border-width: 3px;
       width: 500px;
       position: absolute;
       right: 5rem;
@@ -226,25 +210,27 @@
 
 
 
+    /* gallery */
+    .gallery-section .image:hover img{
+      transform: scale(1.13) rotate(0deg);
+      border: 5px solid #FFFB03;
+    }
+
+
+
 
     
 
-  .yellow-line-left{
-      padding-left: 2rem;
-      border-left: 4px solid #fffb03;
-  }
-
-  .yellow-line-right{
-    padding-right: 2rem;
-    
-    border-right: 4px solid #fffb03;
-}
+  /*  --------------- Contact ---------------  */
 
 
 
 
-
-  
+  /*  --------------- Signup ---------------  */
+    .signup-section {
+      padding: 10rem 0;
+      
+    }
 
 
 
@@ -252,19 +238,21 @@
 
 
     /* end of min-width: 992px */
-  }
+}
+
+  
 
 
 
 
   
 
-  @media (min-width: 768px) {
-    .bg h1 {
-      font-size: 4rem;
-      line-height: 4rem;
-    }
+@media (min-width: 768px) {
+  .bg h1 {
+    font-size: 4rem;
+    line-height: 4rem;
   }
+}
   
 
 

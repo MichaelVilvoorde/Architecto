@@ -1,13 +1,14 @@
 @media screen and (max-width: 992px) {
+
+  /* --------------- Nav --------------- */
     nav{
       margin-top: 25px;
-      
 
     }
 
-    #architects .card{
-      margin-top: 50px;
-    }
+    
+  /* Make hamburger on click bg darker------------- */
+
 
     
     .quote{
@@ -20,40 +21,117 @@
     }
 
 
+
+    
+
     #team-home .row{
           display:flex;
           flex-direction: column-reverse;
     }
 
-
-    #team-home img{
+    /* weg? */
+    /* #team-home img{
       background: url(/img/team-img.png);
-    }
+    } */
 
     #contact-home .row{
       display:flex;
       flex-direction: column-reverse;
     }
 
+    hr{
+      display: none
+      ;
+    }
+
+    /* section{
+      padding-top: 200px;
+    } */
+
+
+  /*  --------------- Team ---------------  */
+
+    #architects{
+      padding-top: 150px;
+    }
+
+    #architects .container{
+      width: 80%
+     
+    }
+
+    #architects h2{
+      padding: unset;
+    }
+
+  
+
+    #architects .card .card-body img{
+    width: 10px;
+    }
+
+    #architects .card {
+      background: #030303ec;
+      color: rgb(255, 255, 255); 
+    }
+
+    #architects .col-md-6 {
+      margin-top: 3rem;
+    }
+
+    #architects .col-md-6 .card .card-body img{
+      margin-top: unset;
+      height: 150px;
+      width: auto !important;
+    }
+
+  
 
 
 
+  /*  --------------- Projects ---------------  */
 
 
+    #projects .col-lg-12 h2{
+      background: rgb(255, 230, 0);
+    }
 
-
-
-
-
-
-
-    /* .container {
+    #projects .row{
       display:flex;
       flex-direction: column-reverse;
     }
+
+    #projects .btn-desktop{
+      display: none;
+    }
+
+    .projects-section{
+      padding-bottom: 5rem;
+    }
     
-    .section1,
-    .section2 {
-      height: auto;
-    } */
+
+
+
+
+  /*  --------------- Contact ---------------  */
+
+
+
+  /* signup */
+    .signup-section {
+      padding: 3rem 0;
+  
+    }
+
+    .signup-section .btn{
+      width: 100%;
+  
+    }
+
+  
+
+
+
   }
+
+  
