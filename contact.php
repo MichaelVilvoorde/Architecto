@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -32,6 +33,9 @@
 
 
     <body>
+
+        
+
         <div class="overflow-x-hidden">
             <!-- Navigation-->
             <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
@@ -63,7 +67,7 @@
                                 </div>
                               </li>
                             
-                            <li class="nav-item"><a class="nav-link close-collapsed-nav-on-click" href="contact.html">Contact</a></li>
+                            <li class="nav-item"><a class="nav-link close-collapsed-nav-on-click" href="contact.php">Contact</a></li>
                         </ul>
                     </div>
                 </div>
@@ -71,7 +75,7 @@
         
         
             <section id="contact">
-            
+            <img src="img/under construction.png" alt="">
 
                 <div class="container-fluid contact-page bg-dark text-light">
                     <div class="row">
@@ -87,16 +91,17 @@
                 
             </section>
 
-            <!-- <p>Send e-mail</p>
-            <form class="" action="contact.html" method="POST">
+            <h2>Contact us</h2>
+            <form class="" action="contactform.php" method="POST">
                 <input type="text" name="name" placeholder="Full name">
                 <input type="text" name="mail" placeholder="Your e-mail">
                 <input type="text" name="subject" placeholder="Subject">
                 <textarea name="message" placeholder="Message"></textarea>
                 <button type="sumbit" name="submit">Send mail</button>
                 
-            </form> -->
+            </form>
 
+            
 
         
         
