@@ -37,7 +37,7 @@
       border-bottom: 0.25rem solid transparent;
     }
     #mainNav.navbar-shrink .nav-link:hover {
-      color: #fffb03;
+      color: #e2de00;
     }
     #mainNav.navbar-shrink .nav-link:active {
       color: #ffffff;
@@ -151,9 +151,7 @@
         margin-right: 20%;
     } 
       
-    /* #about-section{
-      padding-bottom: 400px !important;
-    } */
+    
 
     
 
@@ -163,6 +161,7 @@
       color: rgb(255, 255, 255); 
       
     }
+
       
     
 
@@ -180,13 +179,8 @@
     }
 
 
-    .projects-section .featured-text {
-      padding: 0 0 0 2rem;
-      border-left: 0.5rem solid #64a19d;
-    }
-
     .projects-section .project-text {
-      padding: 5rem;
+      padding: 4rem;
       /* background: rgb(31, 31, 31); */
     }
 
@@ -196,16 +190,16 @@
     .projects-section .project-text hr {
       border-color: #fffb03;
       border-width: 3px;
-      width: 500px;
+      width: 50vw;
 
     }
 
     .projects-section .project-text hr.line-right{
       border-color: #fffb03;
       border-width: 3px;
-      width: 500px;
+      width: 50vw;
       position: absolute;
-      right: 5rem;
+      right: 4rem;
     }
 
 

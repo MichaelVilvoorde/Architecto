@@ -88,7 +88,7 @@ html{
 
   #mainNav .dropdown-menu a{
   
-    color: #A7A7A6;
+    color: #ffffff;
     
   }
 
@@ -256,13 +256,18 @@ html{
       rgba(0, 0, 0, 0.4) 50%, 
       #000000 100%)
   }
-  
+
+  #architects h5 {
+    font-weight: normal;
+  }
+ 
+
 
   #architects img {
     margin-top: -50px; 
-    
   }
 
+  
 
   #architects .card {
     background: #161616ec;
@@ -358,8 +363,11 @@ Fix the full screen yellow lines ###############################################
     background-size: cover;
   }
 
+  .signup-section h2{
+    background: rgba(0, 0, 0, 0.336);
+  }
+
   .signup-section .form-inline input {
-      
     padding: 1.25rem 3rem;
     height: auto;
     
@@ -370,8 +378,9 @@ Fix the full screen yellow lines ###############################################
   
   
 /*  --------------- Footer ---------------  */
-  .footer {
-    padding: 5rem 0;
+  footer {
+    
+    background: #0A0A0A;
   }
 
 

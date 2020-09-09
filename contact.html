@@ -32,115 +32,127 @@
 
 
     <body>
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
-            <div class="container">
-                <a class="navbar-brand close-collapsed-nav-on-click" href="index.html">Architecto</a>
-                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#hamburger" aria-controls="hamburger" aria-expanded="false" aria-label="Toggle navigation">                    
-                    <i class="fas fa-bars"></i>
-                </button>
-                <div class="collapse navbar-collapse" id="hamburger">
-                    <ul class="navbar-nav ml-auto">
-
-                        <li class="nav-item"><a class="nav-link close-collapsed-nav-on-click" href="index.html">Home</a></li>
-
-                        <li class="nav-item"><a class="nav-link close-collapsed-nav-on-click" href="index.html#about">About</a></li>
-
-                        <li class="nav-item"><a class="nav-link close-collapsed-nav-on-click" href="team.html">The Team</a></li>
-
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Projects
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                              <a class="dropdown-item" href="projects.html">All projects</a>
-                              <div class="dropdown-divider"></div>
-                              <a class="dropdown-item" href="project1.html">Project 1</a>
-                              <a class="dropdown-item" href="project2.html">Project 2</a>
-                              <a class="dropdown-item" href="project3.html">Project 3</a>
-                              <a class="dropdown-item" href="project4.html">Project 4</a>
-                            </div>
-                          </li>
-                        
-                        <li class="nav-item"><a class="nav-link close-collapsed-nav-on-click" href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        
-        
-        <section id="contact">
-         
-
-            <div class="container-fluid contact-page bg-dark text-light">
-                <div class="row">
-                  <div class="col-lg-10 contact-left">
-                    left
-                  </div>
-
-                  <div class="col-lg-2 contact-right">
-                    right
-                  </div>
-                </div>
-            </div>
-            
-        </section>
-
-
-
-        
-        
-
-
-        
-
-        
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
-        <!-- Signup-->
-        <section class="signup-section" id="signup">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-10 col-lg-8 mx-auto text-center">
-                        
-                        <h2 class="text-white mb-5">Subscribe to our newsletter!</h2>
-                        <form class="form-inline d-flex">
-                            <input class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail" type="email" placeholder="Enter email address..." />
-                            <button class="btn btn-primary mx-auto" type="submit">Subscribe</button>
-                        </form>
+        <div class="overflow-x-hidden">
+            <!-- Navigation-->
+            <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+                <div class="container">
+                    <a class="navbar-brand close-collapsed-nav-on-click" href="index.html">Architecto</a>
+                    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#hamburger" aria-controls="hamburger" aria-expanded="false" aria-label="Toggle navigation">                    
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <div class="collapse navbar-collapse" id="hamburger">
+                        <ul class="navbar-nav ml-auto">
+    
+                            <li class="nav-item"><a class="nav-link close-collapsed-nav-on-click" href="index.html">Home</a></li>
+    
+                            <li class="nav-item"><a class="nav-link close-collapsed-nav-on-click" href="index.html#about">About</a></li>
+    
+                            <li class="nav-item"><a class="nav-link close-collapsed-nav-on-click" href="team.html">The Team</a></li>
+    
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Projects
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                  <a class="dropdown-item" href="projects.html">All projects</a>
+                                  <!-- <div class="dropdown-divider"></div> -->
+                                  <a class="dropdown-item" href="project1.html">Project 1</a>
+                                  <a class="dropdown-item" href="project2.html">Project 2</a>
+                                  <a class="dropdown-item" href="project3.html">Project 3</a>
+                                  <a class="dropdown-item" href="project4.html">Project 4</a>
+                                </div>
+                              </li>
+                            
+                            <li class="nav-item"><a class="nav-link close-collapsed-nav-on-click" href="contact.html">Contact</a></li>
+                        </ul>
                     </div>
                 </div>
-            </div>
-        </section>
+            </nav>
         
-        <!-- FOOTER -->
-        <footer>
-            <div class="container-fluid bg-dark text-white">
-            <div class="row">
-                <div class="col text-center py-3">
-                    <p>Copyright &copy; <span id="year"></span> Architecto</p>
+        
+            <section id="contact">
+            
+
+                <div class="container-fluid contact-page bg-dark text-light">
+                    <div class="row">
+                    <div class="col-lg-10 contact-left">
+                        left
+                    </div>
+
+                    <div class="col-lg-2 contact-right">
+                        right
+                    </div>
+                    </div>
                 </div>
-            </div>
-            </div>
-        </footer>
+                
+            </section>
+
+            <!-- <p>Send e-mail</p>
+            <form class="" action="contact.html" method="POST">
+                <input type="text" name="name" placeholder="Full name">
+                <input type="text" name="mail" placeholder="Your e-mail">
+                <input type="text" name="subject" placeholder="Subject">
+                <textarea name="message" placeholder="Message"></textarea>
+                <button type="sumbit" name="submit">Send mail</button>
+                
+            </form> -->
+
+
+        
+        
+
+
+        
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            <!-- Signup-->
+            <section class="signup-section" id="signup">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-10 col-lg-8 mx-auto text-center">
+                            
+                            <h2 class="text-white mb-5 rounded">Subscribe to our newsletter!</h2>
+
+                            <form class="form-inline d-flex">
+                                <input class="form-control flex-fill mb-3 mr-0 mr-lg-3 mb-sm-0 " id="inputEmail" type="email" placeholder="Enter e-mail address..." />
+                                <button class="btn btn-primary mx-auto" type="submit">Subscribe</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- FOOTER -->
+            <footer>
+                <div class="container-fluid text-white">
+                <div class="row">
+                    <div class="col text-center py-3">
+                        <p>Copyright &copy; <span id="year"></span> Architecto</p>
+                    </div>
+                </div>
+                </div>
+            </footer>
+        </div>
 
 
 
