@@ -2031,7 +2031,7 @@ textarea.form-control {
 }
 
 .form-check-input:disabled ~ .form-check-label {
-  color: #6c757d;
+  color: #7d6c6c;
 }
 
 .form-check-label {
@@ -3677,6 +3677,7 @@ input[type="button"].btn-block {
 
 .custom-checkbox .custom-control-label::before {
   border-radius: 0.25rem;
+  
 }
 
 .custom-checkbox .custom-control-input:checked ~ .custom-control-label::after {

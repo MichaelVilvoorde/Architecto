@@ -61,7 +61,7 @@
     }
     #mainNav .dropdown-menu a:hover{
       background: transparent;
-      color: #fffb03 !important;
+      color: #ffe600 !important;
     }
 
 
@@ -126,12 +126,12 @@
 
     .yellow-line-left{
       padding-left: 2rem;
-      border-left: 4px solid #fffb03;
+      border-left: 4px solid #ffe600;
     }
 
      .yellow-line-right{
        padding-right: 2rem;
-       border-right: 4px solid #fffb03;
+       border-right: 4px solid #ffe600;
      } 
 
 
@@ -140,13 +140,13 @@
   /*  --------------- About ---------------  */
 
     hr.right-line{
-      border-bottom: 3px solid #fffb03;
+      border-bottom: 3px solid #ffe600;
       width: 80%;
       margin-left: 20%;
     } 
 
     hr.left-line{
-        border-bottom: 3px solid #fffb03;
+        border-bottom: 3px solid #ffe600;
         width: 80%;
         margin-right: 20%;
     } 
@@ -188,14 +188,14 @@
 
 
     .projects-section .project-text hr {
-      border-color: #fffb03;
+      border-color: #ffe600;
       border-width: 3px;
       width: 50vw;
 
     }
 
     .projects-section .project-text hr.line-right{
-      border-color: #fffb03;
+      border-color: #ffe600;
       border-width: 3px;
       width: 50vw;
       position: absolute;
@@ -207,7 +207,7 @@
     /* gallery */
     .gallery-section .image:hover img{
       transform: scale(1.13) rotate(0deg);
-      border: 5px solid #FFFB03;
+      border: 5px solid #ffe600;
     }
 
 
@@ -217,12 +217,53 @@
 
   /*  --------------- Contact ---------------  */
 
+    #contact{
+      background: url("../img/support-resize.jpg");
+    
+      
+      background-repeat: no-repeat;
+      background-attachment: scroll;
+      background-size: cover;
+      
+      position: absolute;
+      top: 0;
+      left: 0;
+      
+      height: 100vh;
+      width: 100vw;
+      
+    }
+    
+    #contact .container{
+      position: absolute;
+      right: 5vw;
+      width: 40vw;
+    }
+
+    #contact .btn:hover{
+      background-color: #ffe600;
+      color: black;
+    }
+
+    #mainNav.contactNav a{
+      color: #1A1A1A;
+    }
+
+
+
+    /* margin fix for signup page */
+    .margin-top-100{
+      margin-top: 100vh;
+    }
+    
 
 
 
   /*  --------------- Signup ---------------  */
     .signup-section {
-      padding: 10rem 0;
+
+      padding: 11.2rem 0;
+      
       
     }
 

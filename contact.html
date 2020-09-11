@@ -34,7 +34,7 @@
 
     <body>
 
-        
+       
 
         <div class="overflow-x-hidden">
             <!-- Navigation-->
@@ -72,25 +72,64 @@
                     </div>
                 </div>
             </nav>
+
+           
         
-        
+            <div class="margin-top-100"></div>
             <section id="contact">
-            
+                
+                <div class="container pb-5">
+                    <h2 class="text-center">Contact us</h2>
+                    
+                    <form action="contactform.php" method="POST">
+                        <div class="form-group" >
+                            <label>Name</label>
+                            
+                            <input type="text" name="name" class="form-control" placeholder="Full name">
+                        </div>
 
-                <div class="container-fluid contact-page bg-dark text-light">
-                    <div class="row">
-                    <div class="col-lg-10 contact-left">
-                        left
-                    </div>
+                        <div class="form-group" >
+                            <label>Email address</label>
 
-                    <div class="col-lg-2 contact-right">
-                        right
-                    </div>
-                    </div>
+                            <input type="email" name="mail" class="form-control" placeholder="Your e-mail">
+                        </div>
+                        
+                        <div class="form-group" >
+                        <label>Subject</label>
+                        
+                        <input type="text" name="subject" class="form-control" placeholder="What is the question about?">
+                        </div>
+                        
+                        
+                        <div class="form-group">
+                            <label>Message</label>
+
+                            <textarea name="message" class="form-control"  rows="3" placeholder="Your question"></textarea>
+                        </div>
+
+                        <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        
+                            <label class="form-check-label" for="exampleCheck1">Subscribe to newsletter</label>
+
+                        </div>
+
+
+                        
+
+                        <button type="sumbit" name="submit" class="btn text-lightx w-100">Send E-mail</button>
+
+                        <!-- <button type="sumbit" name="submit">Send mail</button> -->
+                    </form>
+                    
                 </div>
                 
             </section>
 
+            
+
+
+<!-- 
             <h2>Contact us</h2>
             <form class="" action="contactform.php" method="POST">
                 <input type="text" name="name" placeholder="Full name">
@@ -99,8 +138,7 @@
                 <textarea name="message" placeholder="Message"></textarea>
                 <button type="sumbit" name="submit">Send mail</button>
                 
-            </form>
-
+            </form> -->
             
 
         
@@ -131,7 +169,7 @@
 
         
             <!-- Signup-->
-            <section class="signup-section" id="signup">
+            <!-- <section class="signup-section" id="signup">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-10 col-lg-8 mx-auto text-center">
@@ -145,18 +183,9 @@
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> -->
             
-            <!-- FOOTER -->
-            <footer>
-                <div class="container-fluid text-white">
-                <div class="row">
-                    <div class="col text-center py-3">
-                        <p>Copyright &copy; <span id="year"></span> Architecto</p>
-                    </div>
-                </div>
-                </div>
-            </footer>
+           
         </div>
 
 
@@ -190,6 +219,9 @@
         </script>
 
         <!-- Own script-->
-        <script src="js/scripts.js"></script>
+        <script src="js/scriptsContact.js"></script>
+        <script>
+            $("#mainNav").addClass("contactNav");
+        </script>
     </body>
 </html>

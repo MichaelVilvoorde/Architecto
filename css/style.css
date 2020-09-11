@@ -16,6 +16,7 @@ html{
   overflow-x: hidden;
 }
 
+
 /* .container{
   position: relative;
 } */
@@ -26,14 +27,14 @@ html{
   right: 2%;
   width: 30px;
   height: 30px;
-  background: rgba(255, 251, 3, 0.5) url(/img/arrow-up-solid.svg);
+  background: rgba(255, 230, 0, 0.5) url(/img/arrow-up-solid.svg);
   /* https://fontawesome.com/icons/arrow-up?style=solid */
   
   background-size: 20px ;
   background-position: center;
   background-repeat: no-repeat;
 
-  border-radius: 10%;
+  border-radius: 25%;
   cursor: pointer;
   z-index: 100000;
   /* visibility: hidden;  */
@@ -42,7 +43,7 @@ html{
 }
 
 .scrollTop:hover{
-  background-color: rgba(255, 251, 3, 1)
+  background-color: rgba(255, 230, 0, 1)
 }
 
 .scrollTop.active{
@@ -63,12 +64,14 @@ html{
   }
 
   ::-webkit-scrollbar-thumb {
-    background: #FFFB03; 
+    background: #ffe600; 
   }
 
   ::-webkit-scrollbar-thumb:hover {
     background:#a8a500; 
   } 
+
+ 
 
 
 
@@ -219,7 +222,7 @@ html{
     background: rgb(26, 26, 26);
     padding: 1rem;
     /* border: 1px solid rgba(255, 255, 255, 0.658); */
-    border-left: 4px solid #FFFB03;
+    border-left: 4px solid #ffe600;
     
   }
 
@@ -234,7 +237,7 @@ html{
     align-self: center;
     padding-left: 2rem;
 
-    /* border-bottom: solid 2px #FFFB03; */
+    /* border-bottom: solid 2px #ffe600; */
 
 
     /* option2 */
@@ -366,19 +369,23 @@ Fix the full screen yellow lines ###############################################
 
 
 /*  --------------- Contact ---------------  */
-
-
-  .contact-page{
+  #contact{
     padding-top: 100px;
-
-    /* for browser who dont support gradient */
     background: #1a1a1a;
-      
-    background: linear-gradient(to top,
-      rgba(0, 0, 0, 0.4) 0%,
-      rgba(0, 0, 0, 0.4) 50%, 
-      #000000 100%)
+  
+    
   }
+
+  #contact .btn{
+    background-color: #1A1A1A;
+    color: white;
+    
+  }
+
+
+
+ 
+  
 
 
 
@@ -395,11 +402,16 @@ Fix the full screen yellow lines ###############################################
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-size: cover;
+    
   }
 
   .signup-section h2{
-    background: rgba(0, 0, 0, 0.336);
+    background: rgba(0, 0, 0, 0.3);
+    /* display: inline-block;
+    padding: 0 1rem; */
+    
   }
+
 
   .signup-section .form-inline input {
     padding: 1.25rem 3rem;
@@ -408,12 +420,15 @@ Fix the full screen yellow lines ###############################################
     font-size: 80%;
     border: 0;
   }
+
+  .signup-section form .btn{
+    background-color: #ffe600;
+  }
   
   
   
 /*  --------------- Footer ---------------  */
   footer {
-    
     background: #0A0A0A;
   }
 

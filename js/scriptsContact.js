@@ -1,0 +1,55 @@
+
+// strict function
+// (function(){
+//     "use strict";
+  
+//     Define your library...
+//   })();
+
+
+
+    (function ($) {
+    "use strict"; // strict mode
+
+    // alert("test");
+
+    
+
+    // Scrollspy - adds active class on scroll to navbar-item 
+    $("body").scrollspy({
+        target: "#mainNav",
+        offset: 100
+    });
+
+    // Close hamburger menu on click
+    $(".close-collapsed-nav-on-click").click(function () {
+        $(".navbar-collapse").collapse("hide");
+    });
+
+
+
+
+    
+    
+    // Get the current year for the copyright
+    $('#year').text(new Date().getFullYear());
+    
+    
+    // Gallery
+    $(".gallery").magnificPopup({
+        delegate: 'a',
+        type: 'image',
+        gallery:{
+          enabled: true
+        }
+      });
+
+
+
+
+
+})(jQuery); // End of use strict
+
+
+
+

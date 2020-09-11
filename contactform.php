@@ -15,16 +15,18 @@
             // header("Location: ../contact.php?");
             echo "You did not fill in all fields";
         } 
+        
         //Check if email is valid
         elseif (!filter_var($mailFrom, FILTER_VALIDATE_EMAIL)) {
             echo("$mailFrom is not a valid email address");
             //dont lose message
             // header("Location: contact.php?signup=invalidemail&name=$name&subject=$subject&message=$message");
         } 
+
         else {
             mail($mailTo, $subject, $txt, $headers);
             header("Location: contact.php?mailsend");
-            }
+        }
 
 
         

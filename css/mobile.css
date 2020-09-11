@@ -1,9 +1,24 @@
 @media screen and (max-width: 992px) {
 
   /* --------------- Nav --------------- */
-    nav{
+    /* nav{
       margin-top: 25px;
 
+    } */
+
+    .scrollTop{
+      
+      background: rgba(255, 255, 255, 0.7) url(/img/arrow-up-solid.svg);
+      /* https://fontawesome.com/icons/arrow-up?style=solid */
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 15px ;
+      border-radius: 50%;
+    
+    }
+    
+    .scrollTop:hover{
+      background-color: rgb(255, 255, 255)
     }
 
     
@@ -119,12 +134,23 @@
 
 
   /*  --------------- Contact ---------------  */
+  #contact .container{
+    color: white;
+    width: 80vw;
+
+  }
+  #contact .btn{
+    background-color: #ffe600;
+    color: black;
+    
+  }
+
 
 
 
   /* signup */
     .signup-section {
-      padding: 3rem 0;
+      display: none;
   
     }
 
@@ -135,7 +161,6 @@
 
     .signup-section .btn{
       width: 100%;
-      margin-top: 2%;
     }
 
   
