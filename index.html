@@ -24,6 +24,9 @@
 
         <!-- Animate On Scroll CSS-->
         <link rel="stylesheet" href="css/aos.css">
+
+        <!-- jQuery -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         
 
         <title>Architecto</title>
@@ -32,7 +35,10 @@
 
 
     <body>
-        <div class="overflow-x-hidden">
+    <div class="overflow-x-hidden">
+        <!-- <div class="loader-container">
+            <div class="loader"></div>
+        </div> -->
         <div class="scrollTop" onclick="scrollToTop();"></div>
             
         <!-- Navigation-->
@@ -73,7 +79,7 @@
 
         
         <!-- Homepage-->
-        <header class="bg">
+        <header id="home" class="bg">
             <div class="container d-flex h-100 align-items-center">
                 <div class="mx-auto text-center">
                     <h1 class="mx-auto my-0 text-uppercase">Architecto</h1>
@@ -151,7 +157,7 @@
             
             <!-- Quote -->
             <div class="quote">
-                <div class="container py-5">
+                <div class="container pt-3 pb-5">
                     <div class="blockquote-wrapper" data-aos="zoom-in">
                         <div class="blockquote">
                             <p class="font-italic">
@@ -212,7 +218,7 @@
 
             <!-- Quote -->
             <div class="quote">
-                <div class="container py-5">
+                <div class="container pt-3  pb-5">
                     <div class="blockquote-wrapper" data-aos="zoom-in">
                         <div class="blockquote">
                             <p class="font-italic">
@@ -268,7 +274,7 @@
 
             <!-- Quote -->
             <div class="quote">
-                <div class="container py-5">
+                <div class="container pt-3 pb-5">
                     <div class="blockquote-wrapper" data-aos="zoom-in">
                         <div class="blockquote">
                             <p class="font-italic">
@@ -346,19 +352,26 @@
             </div>
             </div>
         </footer>
+
     </div>
 
 
-
+        <!-- <script>
+            $(window).on("load",function(){
+                $(".loader-container").fadeOut(5000);
+            });
+        </script> -->
 
 
 
 
         <!-- Bootstrap core JS-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
         <!-- Third party plugin JS-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+
+        
 
         <!-- Animate On Scroll -->
         <script src="js/aos.js"></script>

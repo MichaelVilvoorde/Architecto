@@ -267,7 +267,10 @@
       
     }
 
-
+  /*  --------------- Footer ---------------  */
+    footer.contact-footer{
+      display: none;
+    }
 
 
 

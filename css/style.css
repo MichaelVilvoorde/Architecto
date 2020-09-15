@@ -17,59 +17,122 @@ html{
 }
 
 
+/* --------------- Loader --------------- */
+  .loader-container{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+  }
+
+  .loader{
+    width: 50px;
+    height: 50px;
+    border: 5px solid;
+    color: rgb(255, 230, 0);
+    border-radius: 50%;
+    border-top-color: transparent;
+    animation: loader 1s linear infinite ;
+  }
+
+  
+
+  @keyframes loader{
+    25%{
+        color: rgb(217, 255, 0);
+    }
+
+    50%{
+        color:  rgb(217, 255, 50);
+    }
+
+    75%{
+        color: rgb(0, 0, 0);
+    }
+
+    to{
+        transform: rotate(360deg);
+    }
+  }
+
+  /* .loader {
+    border: 16px solid #414141; 
+    border-top: 16px solid #ffd000;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+  } */
+
+
+    
+  
+
+  /* @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  } */
+
+
 /* .container{
   position: relative;
 } */
 
-.scrollTop{
-  position: fixed;
-  bottom: 800px;
-  right: 2%;
-  width: 30px;
-  height: 30px;
-  background: rgba(255, 230, 0, 0.5) url(/img/arrow-up-solid.svg);
-  /* https://fontawesome.com/icons/arrow-up?style=solid */
-  
-  background-size: 20px ;
-  background-position: center;
-  background-repeat: no-repeat;
+/* --------------- Scroll --------------- */
 
-  border-radius: 25%;
-  cursor: pointer;
-  z-index: 100000;
-  /* visibility: hidden;  */
-  opacity: 0;
-  transition: 1s;
-}
+  .scrollTop{
+    position: fixed;
+    bottom: 800px;
+    right: 2%;
+    width: 30px;
+    height: 30px;
+    background: rgba(255, 230, 0, 0.5) url(/img/arrow-up-solid.svg);
+    /* https://fontawesome.com/icons/arrow-up?style=solid */
+    
+    background-size: 20px ;
+    background-position: center;
+    background-repeat: no-repeat;
 
-.scrollTop:hover{
-  background-color: rgba(255, 230, 0, 1)
-}
-
-.scrollTop.active{
-  bottom: 30px;
-  visibility: visible;
-  opacity: 1;
-}
-
-/* scrollbar */
-
-
-  ::-webkit-scrollbar {
-    width: 5px;
+    border-radius: 25%;
+    cursor: pointer;
+    z-index: 10;
+    /* visibility: hidden;  */
+    opacity: 0;
+    transition: 1s;
   }
 
-  ::-webkit-scrollbar-track {
-    background: #8d8d8d; 
+  .scrollTop:hover{
+    background-color: rgba(255, 230, 0, 1)
   }
 
-  ::-webkit-scrollbar-thumb {
-    background: #ffe600; 
+  .scrollTop.active{
+    bottom: 30px;
+    visibility: visible;
+    opacity: 1;
   }
 
-  ::-webkit-scrollbar-thumb:hover {
-    background:#a8a500; 
-  } 
+  /* scrollbar */
+
+
+    ::-webkit-scrollbar {
+      width: 5px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: #8d8d8d; 
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #ffe600; 
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background:#a8a500; 
+    } 
 
  
 
@@ -222,7 +285,7 @@ html{
     background: rgb(26, 26, 26);
     padding: 1rem;
     /* border: 1px solid rgba(255, 255, 255, 0.658); */
-    border-left: 4px solid #ffe600;
+    /* border-left: 4px solid #ffe600; */
     
   }
 
@@ -230,16 +293,15 @@ html{
   .blockquote {
     position: relative;
     font-family: 'Montserrat', sans-serif;
-    padding-bottom: 1rem;
     width: 100%;
     max-width: 40vw;
     z-index: 1;
     align-self: center;
+    padding: 1rem;
     padding-left: 2rem;
 
     /* border-bottom: solid 2px #ffe600; */
-
-
+    
     /* option2 */
     /* border-bottom: solid 2px #ffffffb6; */
   }
@@ -247,7 +309,7 @@ html{
   /* Blockquote text */
   .blockquote p {
     position: relative;
-    color: #727272;
+    color: #b3b3b3;
     line-height: 1;
     margin: 0;
     text-align: start;
@@ -258,7 +320,7 @@ html{
   .blockquote:after {
     position: absolute;
     content: "”";
-    color: rgb(255, 255, 255);
+    color: rgb(148, 148, 148);
     font-size: 10rem;
     line-height: 0;
     bottom: -43px;
