@@ -37,7 +37,7 @@
       border-bottom: 0.25rem solid transparent;
     }
     #mainNav.navbar-shrink .nav-link:hover {
-      color: #e2de00;
+      color: rgba(255, 230, 0, 0.9);
     }
     #mainNav.navbar-shrink .nav-link:active {
       color: #ffffff;
@@ -52,17 +52,15 @@
       /* background: transparent; */
       background:rgba(0, 0, 0, 0.7)!important;
       border: none;
-      
+
     }
-  
-    #mainNav .dropdown-menu a{
-      
-      color: white !important;
-    }
+
     #mainNav .dropdown-menu a:hover{
       background: transparent;
-      color: #ffe600 !important;
+      color:  rgba(255, 230, 0, 0.9);
     }
+  
+    
 
 
 

@@ -113,7 +113,15 @@
 
 
     #projects .col-lg-12 h2{
-      background: rgb(255, 230, 0);
+      padding-bottom: 1rem;
+      border-bottom: 2px solid #ffffff;
+      width: 70%;
+      margin: auto;
+     
+     
+      
+      
+     
     }
 
     #projects .row{
