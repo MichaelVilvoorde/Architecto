@@ -81,30 +81,65 @@
                 <div class="container pb-5">
                     <h2 class="text-center">Contact us</h2>
                     
+                    <?php
+                        if(isset($_GET["fieldsempty"])){
+                            if($_GET["fieldsempty"]==true){
+                                echo "<p>You did not fill in all fields</p>";
+                                $name=$_GET["name"];
+                                $mail=$_GET["mail"];
+                                $subject=$_GET["subject"];
+                                $message=$_GET["message"];
+                            }
+                            
+                        }
+                        else {
+                            $name = "";
+                            $mail = "";
+                            $subject = "";
+                            $message = "";
+                        }
+                        if(isset($_GET["mailsend"])){
+                            echo "<p>Mail sent successfully. We will be in touch shortly!</p>";
+                        }
+                    ?>
+
+                   
+
+
+
                     <form action="contactform.php" method="POST">
                         <div class="form-group" >
                             <label>Name</label>
                             
-                            <input type="text" name="name" class="form-control" placeholder="Full name">
+                            <input type="text" name="name" class="form-control" placeholder="Full name" 
+                            <?php
+                                echo ' value="'.$name.'"';
+                            ?>>
                         </div>
 
                         <div class="form-group" >
                             <label>Email address</label>
 
-                            <input type="email" name="mail" class="form-control" placeholder="Your e-mail">
+                            <input type="email" name="mail" class="form-control" placeholder="Your e-mail"
+                            <?php
+                                echo ' value="'.$mail.'"';
+                            ?>>
                         </div>
                         
                         <div class="form-group" >
-                        <label>Subject</label>
-                        
-                        <input type="text" name="subject" class="form-control" placeholder="What is the question about?">
+                            <label>Subject</label>
+                            
+                            <input type="text" name="subject" class="form-control" placeholder="What is the question about?"
+                            <?php
+                                echo ' value="'.$subject.'"';
+                            ?>>
                         </div>
                         
                         
                         <div class="form-group">
                             <label>Message</label>
 
-                            <textarea name="message" class="form-control"  rows="3" placeholder="Your question"></textarea>
+                            <textarea name="message" class="form-control" rows="3" placeholder="What is the question about?"><?php echo $message; ?></textarea>
                         </div>
 
                         <div class="form-group form-check">
@@ -118,6 +153,10 @@
                         
 
                         <button type="sumbit" name="submit" class="btn text-lightx w-100">Send E-mail</button>
+
+                        
+
+                        
 
                         <!-- <button type="sumbit" name="submit">Send mail</button> -->
                     </form>
