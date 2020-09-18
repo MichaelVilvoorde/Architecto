@@ -135,6 +135,34 @@
 
 
 
+     #team-home{
+      
+      padding-top: 5rem;
+      background: linear-gradient(to bottom, #000000 0%, rgba(0, 0, 0, 0.7) 70%,
+      rgba(0, 0, 0, 0.6) 100%);
+  
+  
+    }
+    
+    #project-home{
+      padding-top: 5rem;
+    }
+  
+    
+    
+    
+    #contact-home{
+      /* for browser who dont support gradient -> class bg-dark */
+  
+      padding-top: 5rem;
+      background: linear-gradient(to bottom, #000000 0%, rgba(0, 0, 0, 0.7) 70%,
+      rgba(0, 0, 0, 0.2) 100%);
+  
+      }
+
+
+
+
   /*  --------------- About ---------------  */
 
     hr.right-line{
@@ -159,6 +187,7 @@
       color: rgb(255, 255, 255); 
       
     }
+
 
       
     
