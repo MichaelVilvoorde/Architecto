@@ -58,14 +58,14 @@
                                     Projects
                                 </a>
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                  <a class="dropdown-item text-light" href="projects.html">All projects</a>
-                                  <!-- <div class="dropdown-divider"></div> -->
-                                  <a class="dropdown-item text-light" href="project1.html">Project 1</a>
-                                  <a class="dropdown-item text-light" href="project2.html">Project 2</a>
-                                  <a class="dropdown-item text-light" href="project3.html">Project 3</a>
-                                  <a class="dropdown-item text-light" href="project4.html">Project 4</a>
+                                <a class="dropdown-item pb-3" href="projects.html">All the projects</a>
+                                <!-- <div class="dropdown-divider"></div> -->
+                                <a class="dropdown-item" href="project1.html">Light Utopia 2.0</a>
+                                <a class="dropdown-item" href="project2.html">Digital light square</a>
+                                <a class="dropdown-item" href="project3.html">Wild living & Nature</a>
+                                <a class="dropdown-item" href="project4.html">Block vs Blocks Element</a>
                                 </div>
-                              </li>
+                            </li>
                             
                             <li class="nav-item"><a class="nav-link close-collapsed-nav-on-click" href="contact.php">Contact</a></li>
                         </ul>
