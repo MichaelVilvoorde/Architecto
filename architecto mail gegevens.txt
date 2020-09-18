@@ -1,0 +1,9 @@
+naam: Architecto
+email: architectoinfo@gmail.com
+password: Architecto123
+
+
+MailChimp
+
+email: architectoinfo@gmail.com
+password: Architecto123@
