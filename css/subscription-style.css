@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #17191C;
+}
+
+.success{
+    color: green;
+}
+
+.error{
+    color: red;
+}
+
+
+.center{
+    padding-top: 10%;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+
+.verified-text{
+    text-align: center;
+    color: white;
+    padding: 3rem;
+    font-size: large;
+}
+
+
+.back-to-site-button{
+    text-decoration:none;
+    color: white;
+    border:2px solid white;
+    border-radius:.4em;
+    font-weight:800;
+    font-size:16px;
+    line-height:100%;
+    padding: 18px 30px;
+}
+
+.back-to-site-button:hover{
+    background: white;
+    color: black;
+}
+

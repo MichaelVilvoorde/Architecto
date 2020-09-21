@@ -55,12 +55,17 @@ if(isset($_POST['subscribe'])){
                 $verifyLink = $siteURL.'subscription.php?email_verify='.$verify_code; 
                 $subject = 'Confirm Subscription'; 
      
+                //mail styling
                 $message = '<h1 style="font-size:22px;margin:18px 0 0;padding:0;text-align:left;color:#3c7bb6">Email Confirmation</h1> 
                 <p style="color:#616471;text-align:left;padding-top:15px;padding-right:40px;padding-bottom:30px;padding-left:40px;font-size:15px">Thank you for signing up with '.$siteName.'! Please confirm your email address by clicking the link below.</p> 
                 <p style="text-align:center;"> 
-                    <a href="'.$verifyLink.'" style="border-radius:.25em;background-color:#4582e8;font-weight:400;min-width:180px;font-size:16px;line-height:100%;padding-top:18px;padding-right:30px;padding-bottom:18px;padding-left:30px;color:#fffffftext-decoration:none">Confirm Email</a> 
+                    <a href="'.$verifyLink.'">Confirm Email</a> 
+                    
                 </p> 
+                
                 <br><p><strong>'.$siteName.' Team</strong></p>'; 
+                // Styling for confirm button(between .$verifyLink.'" and >Confirm Email) (but doesnt work in e-mail)
+                // style="border-radius:.25em;background-color:#4582e8;font-weight:400;min-width:180px;font-size:16px;line-height:100%;padding-top:18px;padding-right:30px;padding-bottom:18px;padding-left:30px;color:#ffffff;text-decoration:none"
                  
                 $headers = "MIME-Version: 1.0" . "\r\n";  
                 $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";  
@@ -132,26 +137,21 @@ if(!empty($_GET['email_verify'])){
 <title>Email Verification</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta charset="utf-8">
-<!-- web-fonts -->
-<link href="//fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;subset=latin-ext" rel="stylesheet">
+
 
 <!-- Stylesheet file -->
-<link rel="stylesheet" type="text/css" href="css/style.css" />
+<link rel="stylesheet" href="css/subscription-style.css">
 
 </head>
-<body class="subs">
-<div class="container">
-    <div class="subscribe box-sizing">
-        <div class="sloc-wrap box-sizing">
-            <div class="sloc-content">
-                <div class="sloc-text">
-                    <div class="sloc-header"><?php echo $statusMsg; ?></div>
-                </div>
-                <a href="<?php echo $siteURL; ?>" class="cwlink">Go to Site</a>
-            </div>
-        </div>
+<body>
+
+    <div class="center">
+        <div class="verified-text"><?php echo $statusMsg; ?></div>
+        <a class="back-to-site-button" href="<?php echo $siteURL; ?>">Go to Site</a>
     </div>
-</div>
+
+        
+
 </body>
 </html>
 

@@ -313,23 +313,9 @@
                 </div>
             </div>
         </section>
+        
 
-
-
-<!------------------ Signup Test --------------------->
-        <!-- Display form submission status -->
-        <div class="status"></div>
-
-        <!-- Subscription form -->
-        <form action="#" id="subsFrm" method="post">
-            <input type="text" id="name" placeholder="Full Name" required="">
-            <input type="email" id="email" placeholder="E-mail" required="">
-            <input type="button" id="subscribeBtn" value="Subscribe Now">
-        </form>
-
-
-
-
+     
 
         
         <!-- Signup-->
@@ -337,18 +323,41 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-10 col-lg-8 mx-auto text-center">
-                        
-                        <h2 class="text-white rounded">Subscribe to our newsletter!</h2>
-                        
-                        <form class="form-inline d-flex">
-                            
-                            <input class="form-control flex-fill mb-3 mr-0 mr-lg-3 mb-sm-0 " id="inputEmail" type="email" placeholder="Enter e-mail address..." />
-                            <button class="btn   mx-auto" type="submit">Subscribe</button>
-                        </form>
+
+                        <div class="dark-overlay p-4">
+
+                            <h2 class="text-white rounded">Subscribe to our newsletter!</h2>
+
+                            <!-- Display form submission status -->
+                            <div class="status" style="color:white;"></div>
+
+                            <!-- Subscription form -->
+                            <form action="#" id="subsFrm" method="post">
+                                <div class="row mb-2">
+                                    <div class="col-12">
+                                        <input class="form-control" type="text" id="name" placeholder="Full Name" required="">
+                                    </div>
+                                </div>
+                                <div class="row mb-2">
+                                    <div class="col-12">
+                                        <input class="form-control" type="email" id="email" placeholder="E-mail" required="">
+                                    </div>
+                                    
+                                </div>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <input class="btn w-100" type="button" id="subscribeBtn" value="Subscribe">
+                                    </div>
+                                </div>
+                                
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
+
+
         
         <!-- FOOTER -->
         <footer>

@@ -97,7 +97,7 @@ html{
     background-position: center;
     background-repeat: no-repeat;
 
-    border-radius: 0%;
+    border-radius: 25%;
     cursor: pointer;
     z-index: 10;
     /* visibility: hidden;  */
@@ -493,24 +493,25 @@ html{
     
   }
 
-  .signup-section h2{
-    background: rgba(0, 0, 0, 0.3);
+  .signup-section .dark-overlay{
+    background: rgba(0, 0, 0, 0.5);
     /* display: inline-block;
     padding: 0 1rem; */
+  }
+
+  .signup-section .status{
+    color: white;
     
   }
 
-
-  .signup-section .form-inline input {
-    padding: 1.25rem 3rem;
-    height: auto;
-    
-    font-size: 80%;
-    border: 0;
-  }
 
   .signup-section form .btn{
     background-color: #ffe600;
+    padding: 0.5rem 1rem;  
+    font-size: 85%;
+    font-weight: bold;
+    text-transform: uppercase;
+    
   }
   
   

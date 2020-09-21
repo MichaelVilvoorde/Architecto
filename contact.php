@@ -79,12 +79,12 @@
             <section id="contact">
                 
                 <div class="container pb-5">
-                    <h2 class="text-center">Contact us</h2>
+                    <h2 class="text-center pb-2">Contact us</h2>
                     
                     <?php
                         if(isset($_GET["fieldsempty"])){
                             if($_GET["fieldsempty"]==true){
-                                echo "<p>You did not fill in all fields</p>";
+                                echo "<p style='color:red;'>" . "You did not fill in all fields" . "</p>";
                                 $name=$_GET["name"];
                                 $mail=$_GET["mail"];
                                 $subject=$_GET["subject"];
@@ -99,7 +99,7 @@
                             $message = "";
                         }
                         if(isset($_GET["mailsend"])){
-                            echo "<p>Mail sent successfully. We will be in touch shortly!</p>";
+                            echo "<p style='color:green;'>" . "Mail sent successfully. We'll be in touch!" . "</p>";
                         }
                     ?>
 
@@ -142,12 +142,12 @@
                             <textarea name="message" class="form-control" rows="3" placeholder="What is the question about?"><?php echo $message; ?></textarea>
                         </div>
 
-                        <div class="form-group form-check">
+                        <!-- <div class="form-group form-check">
                             <input type="checkbox" class="form-check-input" id="exampleCheck1">
                         
                             <label class="form-check-label" for="exampleCheck1">Subscribe to newsletter</label>
 
-                        </div>
+                        </div> -->
 
 
                         
@@ -166,41 +166,7 @@
             </section>
 
             
-
-
-<!-- 
-            <h2>Contact us</h2>
-            <form class="" action="contactform.php" method="POST">
-                <input type="text" name="name" placeholder="Full name">
-                <input type="text" name="mail" placeholder="Your e-mail">
-                <input type="text" name="subject" placeholder="Subject">
-                <textarea name="message" placeholder="Message"></textarea>
-                <button type="sumbit" name="submit">Send mail</button>
-                
-            </form> -->
             
-
-
-
-
-
-        
-            <!-- Signup-->
-            <!-- <section class="signup-section" id="signup">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-10 col-lg-8 mx-auto text-center">
-                            
-                            <h2 class="text-white mb-5 rounded">Subscribe to our newsletter!</h2>
-
-                            <form class="form-inline d-flex">
-                                <input class="form-control flex-fill mb-3 mr-0 mr-lg-3 mb-sm-0 " id="inputEmail" type="email" placeholder="Enter e-mail address..." />
-                                <button class="btn btn-primary mx-auto" type="submit">Subscribe</button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </section> -->
 
             <!-- FOOTER -->
             <footer class="contact-footer">
