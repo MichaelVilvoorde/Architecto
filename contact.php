@@ -75,6 +75,7 @@
 
            
         
+
             <div class="margin-top-100"></div>
             <section id="contact">
                 
@@ -178,8 +179,7 @@
                     </div>
                 </div>
             </footer>
-            
-           
+
         </div>
 
 
