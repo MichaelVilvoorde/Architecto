@@ -33,6 +33,11 @@
 <body>
 
     <div class="overflow-x-hidden">
+
+        <div class="loader-container">
+            <div class="loader"></div>
+        </div>
+        
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
             <div class="container">
@@ -178,6 +183,13 @@
 
 <!-- Own script-->
 <script src="js/scripts.js"></script>
+
+<script>
+    // loader
+    setTimeout(function() {
+        $('.loader-container').fadeOut('fast');
+        }, 2000); // <-- time in milliseconds       
+</script>
 
 
 
