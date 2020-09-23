@@ -26,8 +26,6 @@
     }
 
     
-  
-
 
 
   /*  --------------- Homepage ---------------  */
@@ -182,8 +180,11 @@
 
 
   /*  --------------- Contact ---------------  */
+  #contact{
+    padding-top: 9rem;
+    padding-bottom: 3rem;
+  }
   
- 
   
   #contact .container{
     color: white;
@@ -194,17 +195,8 @@
   #contact .btn{
     background-color: #ffe600;
     color: black;
-  
-  }
-
-  footer.contact-footer{
-    height: 66px;
-    width: 100%;
-
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    z-index: 50;
+    
+    
   }
 
 
