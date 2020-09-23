@@ -297,8 +297,18 @@
 
   /*  --------------- Footer ---------------  */
     footer.contact-footer{
+      /* background: transparent;
+
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      z-index: 50000; */
+
       display: none;
     }
+
+    
 
 
 

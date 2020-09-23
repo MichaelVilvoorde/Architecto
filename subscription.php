@@ -122,7 +122,7 @@ if(!empty($_GET['email_verify'])){
         ); 
         $update = $subscriber->update($data, $con); 
         if($update){ 
-            $statusMsg = '<p class="success">Your email address has been verified successfully.</p>'; 
+            $statusMsg = '<p>Your email address has been verified successfully.</p>'; 
         }else{ 
             $statusMsg = '<p class="error">Some problem occurred on verifying your email, please try again.</p>'; 
         } 

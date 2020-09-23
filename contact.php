@@ -58,12 +58,12 @@
                                     Projects
                                 </a>
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item pb-3" href="projects.html">All the projects</a>
+                                <a class="dropdown-item text-white pb-3" href="projects.html">All the projects</a>
                                 <!-- <div class="dropdown-divider"></div> -->
-                                <a class="dropdown-item" href="project1.html">Light Utopia 2.0</a>
-                                <a class="dropdown-item" href="project2.html">Digital light square</a>
-                                <a class="dropdown-item" href="project3.html">Wild living & Nature</a>
-                                <a class="dropdown-item" href="project4.html">Block vs Blocks Element</a>
+                                <a class="dropdown-item text-white" href="project1.html">Light Utopia 2.0</a>
+                                <a class="dropdown-item text-white" href="project2.html">Digital light square</a>
+                                <a class="dropdown-item text-white" href="project3.html">Wild living & Nature</a>
+                                <a class="dropdown-item text-white" href="project4.html">Block vs Blocks Element</a>
                                 </div>
                             </li>
                             
@@ -75,6 +75,7 @@
 
            
         
+
             <div class="margin-top-100"></div>
             <section id="contact">
                 
@@ -139,7 +140,7 @@
                         <div class="form-group">
                             <label>Message</label>
 
-                            <textarea name="message" class="form-control" rows="3" placeholder="What is the question about?"><?php echo $message; ?></textarea>
+                            <textarea name="message" class="form-control" rows="3" placeholder="Your question"><?php echo $message; ?></textarea>
                         </div>
 
                         <!-- <div class="form-group form-check">
@@ -178,8 +179,7 @@
                     </div>
                 </div>
             </footer>
-            
-           
+
         </div>
 
 
