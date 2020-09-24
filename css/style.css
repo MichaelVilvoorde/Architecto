@@ -36,18 +36,18 @@ html{
     color: rgb(255, 230, 0);
     border-radius: 50%;
     border-top-color: transparent;
-    animation: loader 1s linear infinite ;
+    animation: loader 1.2s linear infinite ;
   }
 
   
 
   @keyframes loader{
     25%{
-        color: rgb(217, 255, 0);
+        color: rgb(255, 230, 0);
     }
 
     50%{
-        color:  rgb(217, 255, 50);
+        color:  rgb(255, 255, 255);
     }
 
     75%{
@@ -257,7 +257,7 @@ html{
   #project-home{
     /* for gradient per section */
     /* padding-top: 5rem; */
-    background: #0e0e0e !important;
+    background: #161616 !important;
   }
 
   
@@ -297,7 +297,7 @@ html{
     /* border: 3px solid rgba(182, 182, 182, 0.87); */
     margin-left: 20%;
     margin-right: 20%;
-    background: rgb(26, 26, 26);
+    background: none;
     padding: 1rem;
     /* border: 1px solid rgba(255, 255, 255, 0.658); */
     /* border-left: 4px solid #ffe600; */

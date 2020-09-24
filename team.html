@@ -64,7 +64,7 @@
                                 </div>
                             </li>
                             
-                            <li class="nav-item"><a class="nav-link close-collapsed-nav-on-click" href="contact.php">Contact</a></li>
+                            <li class="nav-item"><a class="nav-link close-collapsed-nav-on-click" href="contact.html">Contact</a></li>
                         </ul>
                     </div>
                 </div>
@@ -302,6 +302,22 @@
 
         <!-- Animate On Scroll -->
         <script src="js/aos.js"></script>
+        
+        <script>
+            $(document).ready(function(){
+                $(function(){
+                var hasBeenTrigged = false;
+                $(window).scroll(function() {
+                if ($(this).scrollTop() >= 700 && !hasBeenTrigged) {
+                    alert("This is not real company. These people on this website are made up and are just for show purpose only.");
+                    hasBeenTrigged = true;
+                }
+                });
+                });
+            });
+        </script>
+
+    
 
         <script type="text/javascript">
         //Global - For the whole page

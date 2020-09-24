@@ -82,65 +82,32 @@
                 <div class="container pb-5">
                     <h2 class="text-center pb-2">Contact us</h2>
                     
-                    <?php
-                        if(isset($_GET["fieldsempty"])){
-                            if($_GET["fieldsempty"]==true){
-                                echo "<p style='color:red;'>" . "You did not fill in all fields" . "</p>";
-                                $name=$_GET["name"];
-                                $mail=$_GET["mail"];
-                                $subject=$_GET["subject"];
-                                $message=$_GET["message"];
-                            }
-                            
-                        }
-                        else {
-                            $name = "";
-                            $mail = "";
-                            $subject = "";
-                            $message = "";
-                        }
-                        if(isset($_GET["mailsend"])){
-                            echo "<p style='color:green;'>" . "Mail sent successfully. We'll be in touch!" . "</p>";
-                        }
-                    ?>
-
-                   
-
 
 
                     <form action="contactform.php" method="POST">
                         <div class="form-group" >
                             <label>Name</label>
                             
-                            <input type="text" name="name" class="form-control" placeholder="Full name" 
-                            <?php
-                                echo ' value="'.$name.'"';
-                            ?>>
+                            <input type="text" name="name" class="form-control" placeholder="Full name">
                         </div>
 
                         <div class="form-group" >
                             <label>Email address</label>
 
-                            <input type="email" name="mail" class="form-control" placeholder="Your e-mail"
-                            <?php
-                                echo ' value="'.$mail.'"';
-                            ?>>
+                            <input type="email" name="mail" class="form-control" placeholder="Your e-mail">
                         </div>
                         
                         <div class="form-group" >
                             <label>Subject</label>
                             
-                            <input type="text" name="subject" class="form-control" placeholder="What is the question about?"
-                            <?php
-                                echo ' value="'.$subject.'"';
-                            ?>>
+                            <input type="text" name="subject" class="form-control" placeholder="What is the question about?">
                         </div>
                         
                         
                         <div class="form-group">
                             <label>Message</label>
 
-                            <textarea name="message" class="form-control" rows="3" placeholder="Your question"><?php echo $message; ?></textarea>
+                            <textarea name="message" class="form-control" rows="3" placeholder="Your question"></textarea>
                         </div>
 
                         <!-- <div class="form-group form-check">
@@ -197,6 +164,14 @@
 
         <!-- Animate On Scroll -->
         <script src="js/aos.js"></script>
+
+        <script>
+            $(document).ready(function(){
+              $(".form-group").click(function(){
+                alert("This is not real company. This form is converted from a php to an html page for show purpose only.");
+              });
+            });
+        </script>
 
         <script type="text/javascript">
         //Global - For the whole page
