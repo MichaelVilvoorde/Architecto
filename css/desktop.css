@@ -201,6 +201,9 @@
 
   /*  --------------- Projects ---------------  */
 
+    /* #projects .container .row{
+      padding-bottom: 1rem;
+    } */
 
     #projects .btn-mobile{
       display: none;

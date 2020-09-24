@@ -105,7 +105,7 @@
 
       background: linear-gradient(to bottom,
       rgb(0, 0, 0) 0%,
-      rgb(22, 22, 22) 20%)
+      rgb(26, 26, 26) 20%)
       
 
 
@@ -129,7 +129,7 @@
     }
 
     #architects .card {
-      background: #030303ec;
+      background: #000000ec;
       color: rgb(255, 255, 255); 
     }
 
