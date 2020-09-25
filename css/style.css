@@ -217,8 +217,13 @@ html{
     
   .about-section {
     padding-top: 7rem;
-    
   }
+
+  .about-section a{
+    color: #ffd900;
+    white-space: nowrap;
+  }
+
 
   .gradient-bg{
     /* for browser who dont support gradient */
